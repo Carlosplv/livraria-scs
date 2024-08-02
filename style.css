@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15pt;
+    
+}
+
+body{
+    background-color: #f9f2ff;
+}
+
+img {
+    width: 450px;
+    height: 400px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgb(121, 121, 121);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 24px 80px;
+    text-decoration: none;
+}
+
+header a {
+    color: #FFFFFF;
+    font-weight: 800;
+    padding: 32px;
+    text-decoration: none;
+    border: none;
+}
+
+header h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #FFFFFF;
+    font-weight: 800;
+    padding: 32px;
+    text-decoration: none;
+    border: none;
+}
+
+header a:focus {
+    outline: none;
+}
+
+#inicio {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 24px 80px 100px;
+    position: relative;
+}
+
+#inicio h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.botao {
+    background-color: #8A2BE2;
+    padding: 16px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+#inicio p {
+    margin-bottom: 50px;
+}
+
+#servicos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 24px 80px 128px;
+}
+
+#servicos h2 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#servicos div {
+    flex: 1;
+}
+
+#servicos ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0;
+    margin: 0;
+    font-size: 16pt;
+}
+
+#servicos li {
+    margin-bottom: 16px; /* Espaço entre os itens da lista */
+}
+
+#servicos img {
+    width: 100%; /* Faz a imagem ocupar toda a largura disponível */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 450px; /* Limita a largura máxima da imagem */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+}
+
+#livros {
+    padding: 24px 80px;
+}
+
+#livros h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.og {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se ajustem em múltiplas linhas */
+    gap: 20px; /* Espaço entre os itens */
+}
+
+.og ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex: 1 1 18%; /* Ajusta para que cinco categorias caibam */
+    text-align: center; /* Centraliza o texto dentro dos itens */
+}
+
+.og li {
+    margin-bottom: 10px;
+}
+
+.og img {
+    width: 150px; /* Ajusta o tamanho das imagens */
+    height: 150px;
+    border: 2px solid #8A2BE2;
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+}
+
+#duvidas {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    padding: 64px 80px;
+    text-align: center;
+}
+
+.duvida {
+    position: relative;
+    width: 1000px; /* Garantir que ocupa toda a largura disponível */
+    max-width: 800px; /* Limita a largura máxima dos itens */
+    margin-bottom: 20px; /* Espaço entre os itens */
+}
+
+.duvida h3 {
+    border: 2px solid #8A2BE2;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 24px;
+    margin-bottom: 0;
+}
+
+.duvida svg {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 20px;
+    height: 20px;
+}
+
+.paragrafo {
+    border-right: 1px solid #8A2BE2;
+    border-bottom: 1px solid #8A2BE2;
+    border-left: 1px solid #8A2BE2;
+    border-radius: 0 0 8px 8px;
+    margin-top: -8px;
+    padding: 0 24px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: height 0.5s, opacity 0.5s;
+    width: 100%;
+}
+
+.duvida.ativa .paragrafo {
+    height: fit-content;
+    opacity: 1;
+    padding: 24px;
+}
+
+.começo {
+    display: flex;
+    align-items: center;
+}
+
+.começo img {
+    width: 550px;
+    height: 500px;
+}
+
+#duvidas h2 {
+    margin-top: 100px;
+}
+
+.seta {
+    fill: #8A2BE2; /* Define a cor do SVG */
+}
+
+footer {
+    background-color: #8A2BE2;
+    display: flex;
+    gap: 80px;
+    padding: 64px 80px;
+    color: #FFFFFF;
+}
+
+footer img,
+footer .titulo {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+footer nav a {
+    color: #FFFFFF;
+    display: block;
+    margin-bottom: 16px;
+    text-decoration: none;
+    max-width: 350px;
+}
+
+footer p a {
+    color: #263138;
+    text-decoration: none;
+}
+
+footer p {
+    margin-bottom: 16px;
+}
+
+.final {
+    background-color: #263138;
+    color: white;
+    padding: 24px;
+    text-align: center;
+}
+
+.final a {
+    color: #8A2BE2;
+}
+
+.titulo {
+    margin-bottom: 50px;
+}
+
+strong {
+    margin-bottom: 30px;
+}
